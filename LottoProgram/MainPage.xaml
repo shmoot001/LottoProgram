@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="LottoProgram.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LottoProgram"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.RowDefinitions></Grid.RowDefinitions>
+        
+        <StackPanel>
+            <TextBlock Text="Ange dina 7 valda nummer (1-35):"/>
+            <StackPanel Orientation="Horizontal" >
+                <TextBox x:Name="numberInput1" PlaceholderText="Nummer 1"/>
+                <TextBox x:Name="numberInput2" PlaceholderText="Nummer 2"/>
+                <TextBox x:Name="numberInput3" PlaceholderText="Nummer 3"/>
+                <TextBox x:Name="numberInput4" PlaceholderText="Nummer 4"/>
+                <TextBox x:Name="numberInput5" PlaceholderText="Nummer 5"/>
+                <TextBox x:Name="numberInput6" PlaceholderText="Nummer 6"/>
+                <TextBox x:Name="numberInput7" PlaceholderText="Nummer 7"/>
+            </StackPanel>
+
+            <TextBlock Text="Antal dragningar:"/>
+            <TextBox x:Name="drawsInput" PlaceholderText="Ange antal dragningar"/>
+
+            <Button Content="Starta dragning" Click="StartDrawing_Click"/>
+
+            <TextBlock Text="Resultat:"/>
+            <TextBlock x:Name="resultText" Text=""/>
+        </StackPanel>
+    </Grid>
+
+
+</Page>
